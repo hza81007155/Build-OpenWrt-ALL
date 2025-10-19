@@ -5,8 +5,8 @@ git clone --depth=1 --single-branch https://github.com/linkease/istore.git
 git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
 git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luci.git
 
-# packages
-#git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages.git kiddin9
+# OpenAppFilter(应用过滤）
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter    
 
 # R4S机型调整网口,wan/lan对调，以适配T4机型
 #sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/etc/board.d/02_network

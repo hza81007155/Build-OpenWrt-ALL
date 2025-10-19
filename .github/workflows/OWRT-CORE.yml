@@ -198,8 +198,7 @@ jobs:
           tag_name: ${{env.OWRT_TARGET}}_${{env.OWRT_SOURCE}}_${{env.OWRT_DATE}}
           files: ./owrt/upload/*.*
           body: |
-            istoreos风格，多设备支持！
-            请注意选择你需要的设备固件！
+            istoreos新UI风格，多设备支持！
 
             源码：${{env.OWRT_SOURCE}}
             平台：${{env.OWRT_TARGET}}

@@ -40,7 +40,7 @@ git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-adguard
 git clone --depth=1 --single-branch https://github.com/hza81007155/luci-app-cpufreq.git
 
 # mosdns
-git clone --depth=1 --single-branch https://github.com/hza8100715/luci-app-mosdns.git
+git clone --depth=1 --single-branch https://github.com/hza81007155/luci-app-mosdns.git
 
 # lucky
 git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git

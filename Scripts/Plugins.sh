@@ -34,10 +34,13 @@ rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
 
 # adguardHome
-git clone --depth=1 --single-branch https://github.com/rufengsuixing/luci-app-adguardhome.git
+git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-adguardhome.git
 
 # cpufreq
 git clone --depth=1 --single-branch https://github.com/hza81007155/luci-app-cpufreq.git
+
+# mosdns
+git clone --depth=1 --single-branch https://github.com/hza8100715/luci-app-mosdns.git
 
 # lucky
 git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git

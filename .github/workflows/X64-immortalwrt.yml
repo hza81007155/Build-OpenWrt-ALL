@@ -1,5 +1,5 @@
 #CI项目名
-name: X64-Lede
+name: X64-immortalwrt
 
 on:
   #自动编译：每周一(20:00) 执行编译
@@ -28,4 +28,4 @@ jobs:
       #默认地址
       OWRT_IP: 192.168.10.12
       #默认源码
-      OWRT_URL: https://github.com/hza81007155/lede
+      OWRT_URL: https://github.com/hza81007155/immortalwrt

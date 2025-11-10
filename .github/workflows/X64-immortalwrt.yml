@@ -15,14 +15,14 @@ permissions: write-all
 jobs:
   owrt_config:
     #调用公用编译核心OWRT-CORE.yml
-    uses: ./.github/workflows/OWRT-CORE.yml
+    uses: ./.github/workflows/IMMOWRT-CORE.yml
     with:
       #编译平台，X64包含X86
       OWRT_TARGET: X64
       #默认主题
       OWRT_THEME: argone
       #默认主机名
-      OWRT_NAME: LEDE
+      OWRT_NAME: immortalwrt
       #默认密码，仅作展示，请勿乱改
       OWRT_PW: password
       #默认地址

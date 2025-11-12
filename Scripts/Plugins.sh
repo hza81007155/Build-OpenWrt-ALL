@@ -1,49 +1,14 @@
 #!/bin/bash
 
-#Linkease
-git clone --depth=1 --single-branch https://github.com/linkease/istore.git
-git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
-git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luci.git  
 
-# R4S机型调整网口,wan/lan对调，以适配T4机型
-#sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/etc/board.d/02_network
-
-# partexp 扩容分区
-#git clone https://github.com/hza81007155/luci-app-partexp
-
-# 18.06 Argone theme
-git clone https://github.com/hza81007155/luci-theme-argone
-git clone https://github.com/hza81007155/luci-app-argone-config
-
-# dockerman
-git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerman.git
-
-# ddns-go
-git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-ddns-go.git
-
-# passwall/passwall2
-#git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall.git
-#git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall2.git
-
+git clone https://github.com/kenzok8/small-package package/openwrt-packages
 # 移除 openwrt feeds 自带的核心库
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 
 # 移除 openwrt feeds 过时的luci版本
 rm -rf feeds/luci/applications/luci-app-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
 
-# adguardHome
-git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-adguardhome.git
-
-# cpufreq
-git clone --depth=1 --single-branch https://github.com/hza81007155/luci-app-cpufreq.git
-
-# lucky
-git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git
-
-#Open Clash
-git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git
 
 #预置OpenClash内核和GEO数据
 export CORE_VER=https://raw.githubusercontent.com/vernesong/OpenClash/core/dev/core_version

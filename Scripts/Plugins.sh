@@ -19,7 +19,7 @@ git clone https://github.com/hza81007155/luci-app-argone-config
 git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerman.git
 
 # ddns-go
-git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-ddns-go.git
+# git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-ddns-go.git
 
 # passwall/passwall2
 #git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall.git
@@ -34,13 +34,13 @@ rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
 
 # adguardHome
-git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-adguardhome.git
+# git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-adguardhome.git
 
 # cpufreq
 git clone --depth=1 --single-branch https://github.com/hza81007155/luci-app-cpufreq.git
 
 # lucky
-git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git
+# git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git
 
 #Open Clash
 git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git

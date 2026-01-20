@@ -27,8 +27,8 @@ git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerm
 # git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-ddns-go.git
 
 # passwall/passwall2
-git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall.git
-#git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall2.git
+git clone --depth=1 --single-branch https://github.com/Openwrt-Passwall/openwrt-passwall.git
+#git clone --depth=1 --single-branch https://github.com/Openwrt-Passwall/openwrt-passwall2.git
 
 #luci-app-mosdns
 #git clone --depth=1 --single-branch https://github.com/sbwml/luci-app-mosdns.git

@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# 选择6.6内核
-sed -i 's/6.12/6.6/g' target/linux/x86/Makefile
-
 #Linkease
 git clone --depth=1 --single-branch https://github.com/linkease/istore.git
 git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git

@@ -173,7 +173,7 @@ jobs:
 
            find ./bin/targets/ -iregex ".*\(buildinfo\|json\|manifest\|sha256sums\|packages\)$" -exec rm -rf {} +
           cp -rf $(find ./bin/targets/ -type f -iname "*.*") ./upload/
-          cp -rf ./.config ./upload/Config_"$OWRT_TARGET"_"$OWRT_SOURCE"_"$OWRT_DATE".txt
+          cp -rf ./.config ./upload/Config_"$OWRT_TARGET"_"$OWRT_SOURCE".txt
 
           cd ./upload
           $GITHUB_WORKSPACE/Scripts/Renames.sh
@@ -181,7 +181,7 @@ jobs:
       - name: Release Firmware
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{env.OWRT_TARGET}}_${{env.OWRT_SOURCE}}
+          tag_name: ${{env.OWRT_TARGET}}_${{env.OWRT_SOURCE}}_${{env.OWRT_DATE}}
           files: ./owrt/upload/*.*
           body: |
             istoreos新UI风格，多设备支持！

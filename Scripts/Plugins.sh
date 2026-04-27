@@ -11,11 +11,11 @@ git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luc
 # partexp 扩容分区
 #git clone https://github.com/hza81007155/luci-app-partexp
 
-# 18.06 Argone theme
+# Argone theme
 # git clone -b 18.06 https://github.com/hza81007155/luci-theme-argon.git luci-theme-argon
 # git clone -b 18.06 https://github.com/hza81007155/luci-app-argon-config.git luci-app-argon-config
-git clone --depth=1 -b 18.06 https://github.com/hza81007155/luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/hza81007155/luci-app-argon-config
+git clone https://github.com/hza81007155/luci-theme-argon.git
+git clone https://github.com/hza81007155/luci-app-argon-config.git
 
 # dockerman
 git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-app-dockerman.git

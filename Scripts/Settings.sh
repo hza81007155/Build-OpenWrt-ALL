@@ -12,7 +12,7 @@ fi
 sed -i 's/6.12/6.6/g' target/linux/x86/Makefile
 # 删除冲突插件
 rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d \( -iname "*argon*" -o -iname "*openclash*" -o -iname "*lucky*" \) -prune)
-#sed -i 's/+luci-theme-argone//g' package/feeds/luci/luci-layer2/Makefile
+sed -i 's/+luci-theme-argone//g' package/feeds/luci/luci-layer2/Makefile
 # 修改默认主题
 find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-argon/g" {} \;
 

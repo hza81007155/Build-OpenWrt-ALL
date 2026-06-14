@@ -22,7 +22,7 @@ rm -rf feeds/packages/net/lucky
 rm -rf feeds/packages/utils/coremark
 
 # 修改默认主题
-find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-argone/g" {} \;
+find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-argon/g" {} \;
 
 # 修改主题背景
 #cp -f $GITHUB_WORKSPACE/images/bg1.jpg feeds/luci/themes/luci-theme-argone/htdocs/luci-static/argoe/img/bg1.jpg

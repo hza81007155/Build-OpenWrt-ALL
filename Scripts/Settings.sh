@@ -13,6 +13,7 @@ rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-passwall2
 rm -rf feeds/luci/applications/luci-app-openclash
 rm -rf feeds/luci/applications/luci-app-lucky
+rm -rf feeds/luci/applications/luci-app-nlbwmon
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/packages/net/chinadns-ng
 rm -rf feeds/packages/net/geoview

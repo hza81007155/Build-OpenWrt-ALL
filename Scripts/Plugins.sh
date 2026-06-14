@@ -1,16 +1,4 @@
 #!/bin/bash
-rm -rf feeds/luci/applications/luci-app-passwall
-rm -rf feeds/luci/applications/luci-app-passwall2
-rm -rf feeds/luci/applications/luci-app-openclash
-rm -rf feeds/luci/applications/luci-app-lucky
-rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf feeds/packages/net/chinadns-ng
-rm -rf feeds/packages/net/geoview
-rm -rf feeds/packages/net/sing-box
-rm -rf feeds/packages/net/xray-core
-rm -rf feeds/packages/net/lucky
-rm -rf feeds/packages/utils/coremark
-
 #Linkease
 git clone --depth=1 --single-branch https://github.com/linkease/istore.git
 git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git

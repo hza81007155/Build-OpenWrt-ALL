@@ -9,13 +9,23 @@ fi
 # 选择6.6内核
 sed -i 's/6.12/6.6/g' target/linux/x86/Makefile
 # 删除冲突插件
-rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d \( -iname "*argon*" -o -iname "*openclash*" -o -iname "*lucky*" \) -prune)
+rm -rf feeds/luci/applications/luci-app-passwall
+rm -rf feeds/luci/applications/luci-app-passwall2
+rm -rf feeds/luci/applications/luci-app-openclash
+rm -rf feeds/luci/applications/luci-app-lucky
+rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/packages/net/chinadns-ng
+rm -rf feeds/packages/net/geoview
+rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/xray-core
+rm -rf feeds/packages/net/lucky
+rm -rf feeds/packages/utils/coremark
 
 # 修改默认主题
-find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-argon/g" {} \;
+find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-argone/g" {} \;
 
 # 修改主题背景
-#cp -f $GITHUB_WORKSPACE/images/bg1.jpg feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argoe/img/bg1.jpg
+#cp -f $GITHUB_WORKSPACE/images/bg1.jpg feeds/luci/themes/luci-theme-argone/htdocs/luci-static/argoe/img/bg1.jpg
 
 # 设置默认ip
 sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/luci/bin/config_generate

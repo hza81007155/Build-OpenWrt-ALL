@@ -23,15 +23,15 @@ rm -rf feeds/packages/net/lucky
 rm -rf feeds/packages/utils/coremark
 
 # 强制禁用NAS全套
-echo "CONFIG_PACKAGE_luci-app-nas=n" >> .config
-echo "CONFIG_PACKAGE_mdadm=n" >> .config
-echo "CONFIG_PACKAGE_smartmontools=n" >> .config
-echo "CONFIG_PACKAGE_samba4-server=n" >> .config
-echo "CONFIG_PACKAGE_luci-app-samba4=n" >> .config
-echo "CONFIG_PACKAGE_kmod-md-raid0=n" >> .config
-echo "CONFIG_PACKAGE_kmod-md-raid1=n" >> .config
-echo "CONFIG_PACKAGE_kmod-md-raid456=n" >> .config
-echo "CONFIG_PACKAGE_kmod-md-raid10=n" >> .config
+echo "CONFIG_PACKAGE_luci-app-nas=n" >> X64.txt
+echo "CONFIG_PACKAGE_mdadm=n" >> X64.txt
+echo "CONFIG_PACKAGE_smartmontools=n" >> X64.txt
+echo "CONFIG_PACKAGE_samba4-server=n" >> X64.txt
+echo "CONFIG_PACKAGE_luci-app-samba4=n" >> X64.txt
+echo "CONFIG_PACKAGE_kmod-md-raid0=n" >> X64.txt
+echo "CONFIG_PACKAGE_kmod-md-raid1=n" >> X64.txt
+echo "CONFIG_PACKAGE_kmod-md-raid456=n" >> X64.txt
+echo "CONFIG_PACKAGE_kmod-md-raid10=n" >> X64.txt
 
 # 修改默认主题
 find ./feeds/luci/collections/ -type f -name "Makefile" -exec sed -i "s/luci-theme-bootstrap/luci-theme-argon/g" {} \;

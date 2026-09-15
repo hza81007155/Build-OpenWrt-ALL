@@ -2,4 +2,4 @@
 
 1.IEPL 专线：(https://red.bnaffred.com/#/register?code=GqVAUNgM)
 
-2.三网优化VPS:https://www.hncloud.com/activity/activity_2026spring.html?k=55NAPP
+2.DMIT顶级VPS:https://www.dmit.io/aff.php?aff=17175

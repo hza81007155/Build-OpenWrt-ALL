@@ -7,7 +7,9 @@ if [ -z "$OWRT_THEME" ] || [ -z "$OWRT_IP" ] || [ -z "$OWRT_NAME" ] || [ -z "$OW
 fi
 
 # 选择6.6内核
-sed -i 's/6.12/6.6/g' target/linux/x86/Makefile
+#sed -i 's/6.12/6.6/g' target/linux/x86/Makefile
+sed -i 's/6.18/5.10/g' target/linux/rockchip/Makefile
+
 # 删除冲突插件
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-passwall2

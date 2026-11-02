@@ -27,7 +27,7 @@ jobs:
           # - kernel: '6.6'
           #   script: 'build-diy6.6.sh'  
           - kernel: '6.12'
-            script: 'build-diy6.12.sh'
+            script: 'build-diy6.12-rockchip.sh'
 
     steps:
       # 拉取你自己的仓库（包含 build-diy5.10.sh、build-diy5.15.sh、build-diy6.12.sh）
